@@ -10,6 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
     
       let error = formValidate(form);
+
+      if (error === 0) {
+let response = await fetch('sendmail.php', {
+  method: 'POST',
+  body: FormData
+
+});
+      } else {
+        alert('Complete los campos obligatorios')
+      }
     }
     
     
@@ -38,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
       }
+      return error;
     }
     
     function formAddError(input) {
