@@ -1,0 +1,66 @@
+header {
+	display: flex;
+	justify-content: flex-end;
+    height: 150px;
+}
+.menu__burger-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+    cursor: pointer;
+   display: none;
+}
+.menu__burger-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(34, 110, 40);
+	transition: all 0.5s;
+}
+
+
+.menu__burger-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu__burger-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меню, которое будет появляться */
+.menu__burger {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	padding: 15px;
+  background: rgb(129, 214, 136);
+  color: rgb(34, 110, 40);
+  font-family: 'Signika';
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+}
+.menu__burger.active {
+	transform: translateX(0);
+}
+.menu__burger li {
+	list-style-type: none;
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu__burger-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+  .menu__burger-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+  }
+  .menu__burger-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+  }

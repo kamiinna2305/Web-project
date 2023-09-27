@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Veg Academy</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style_adaptive.css">
+      <link rel="stylesheet" href="css/burger.css">
+      
+   </head>
+   <body>
+   
+   <div class="wrapper">
+      <div class="container">
+         <header class="header">        
+            <div class="logo">
+               <a href="index.html" class="logo__a">
+                 <img src="images/logo.webp" alt="logo" class="logo__img">
+               </a>
+               
+            </div>
+               <div class="header__titel"><a href="index.html"><h1>Veg Academy</h1></a></div>
+               <div class="menu__burger-btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <div class="menu__burger">
+                  <nav>
+                     <ul>
+                     <li><a href="blog.html">Blog</a></li>
+                     <li><a href="Video.html">Video</a></li>
+                     <li><a href="alimentacion.html">Alimentacion</a></li>
+                     <li><a href="que_es_vegan_academy.html">Que es Vegan Academia</a></li>
+                     <li><a href="contacto.html">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               
+            </header>
+   
+   
+         <nav class="menu">
+            <ul class="menu__list">
+               <li class="menu__list-item">
+                  <a href="blog.html" class="menu__list-link">Blog</a>
+               </li>
+               <li class="menu__list-item">
+                  <a href="Video.html" class="menu__list-link">Video</a>
+               </li>
+               <li class="menu__list-item">
+                  <a href="alimentacion.html" class="menu__list-link">Alimentacion</a>
+               </li>
+               <li class="menu__list-item">
+                  <a href="que_es_vegan_academy.html" class="menu__list-link">Que es Veg Academy</a>
+               </li>
+               <li class="menu__list-item">
+                  <a href="contacto.html" class="menu__list-link">Contacto</a>
+               </li>
+            </ul>
+         </nav>
+   
+    
+         <main class="main">
+            <div class="contacts">
+
+               <div class="contacts__body">
+                  <div class="contacts__body-form">
+                     <div class="contacts__title"><h2>Contactar</h2></div>
+                        <form id="form" action="#" class="form" method="post">
+                           <input type="text" class="form__input _req" placeholder="Nombre*" name="name">
+                           <input type="email" class="form__input _req _email" placeholder="E-mail*" name="e-mail">
+                           <input type="tel" class="form__input" placeholder="Telefono">
+                           <input type="text" class="form__input" placeholder="Direccion">
+                           <div class="contacts__form-select">
+                              <p class="contacts__title">Seleccionar de tipo informacion</p>
+                                 <select name="type" id="" class="form__input-select">
+                                    <option value="consulta" selected="selected">Consulta</option>
+                                    <option value="sugerencia" >Sugerencia</option>
+                                    <option value="queja" >Queja</option>
+                                 </select>
+                           </div>
+                           <div class="form__item">
+                              <p class="contacts__title">Sexo</p>
+                                 <div class="options">
+                                    <div class="options__item">
+                                       <input id="formHombre" class="options__input" checked type="radio" name="sexo" value="home" >
+                                       <label id="formHombre" class="options__label" for="formHombre"><span>Hombre</span></label>
+                                    </div>
+                                    <div class="options__item">
+                                       <input id="formMujer" class="options__input" type="radio" name="sexo" value="mujer">
+                                       <label id="formMujer" class="options__label" for="formMujer"><span>Mujer</span></label>
+                                    </div>
+                                 </div>
+                           </div>
+                           <textarea name="Mensaje" id="formMensaje" class="form__textarea" placeholder="Comentarios"></textarea>
+                      <div class="form__item">
+                         <div class="checkbox">
+                            <input id="formAgreement" type="checkbox" name="agreement"checked class="checkbox__input _req">
+                            <label id="formAgreement" for="formAgreement" class="checkbox__label"><span>Esta de acuerdo con que guardemos sus datos</span></label>
+                         </div>
+                      </div>
+                      <button class="form__btn" type="submit">Enviar</button>
+                           
+
+
+
+
+                     </form>
+                  </div>   
+               </div>
+
+               <div class="contacts__body">
+                  <div class="contacts__body-map">
+                     <map class="map" name="">
+                        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.554896748603!2d-0.4767396244915919!3d38.7050673580303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd618645fcb11f67%3A0xfc397af562915d30!2sCarrer%20Juan%20Gil%20Albert%2C%201%2C%201a%2C%2003804%20Alcoi%2C%20Alacant!5e0!3m2!1ses!2ses!4v1694795795071!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </map>
+                     <div class="map__texto">
+                        <p>Nuestra direccion</p>
+                        <p>Carrer Juan Gil Albert, 1, 03804 Alcoi, Alacante</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            
+            
+            
+      
+         </main>
+     
+         <footer class="footer">
+            <div class="footer__menu">
+               <a href="https://www.youtube.com/" target="_blank" class="footer__menu-social-bar">YouTube</a>
+               <a href="https://www.instagram.com/" target="_blank" class="footer__menu-social-bar">Instagram</a>
+               <a href="https://twitter.com/" target="_blank" class="footer__menu-social-bar">Twitter</a>
+               <a href="https://www.facebook.com/" target="_blank" class="footer__menu-social-bar">Facebook</a>
+            </div>
+         </footer>
+      </div>
+      </div>
+   
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      
+      <script src="js/validation.js"></script>
+      <script src="js/main.js"></script>
+</body>
+</html>
