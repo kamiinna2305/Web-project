@@ -1,7 +1,19 @@
 "use strict"
 
   /*cookie*/
+  window.addEventListener('load', () => {
 
+
+/*burger*/
+let menuBtn = document.querySelector('.menu__burger-btn');
+let menu = document.querySelector('.menu__burger');
+console.log(menu.btn);
+
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+});
+});
 function getCookie(name) {
   let matches = document.cookie.match(new RegExp(
   "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -24,13 +36,3 @@ if (cookiecook != "no") {
       document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();               
   });
 }
-
-/*burger*/
-let menuBtn = document.querySelector('.menu__burger-btn');
-let menu = document.querySelector('.menu__burger');
-
-
-menuBtn.addEventListener('click', function(){
-	menuBtn.classList.toggle('active');
-	menu.classList.toggle('active');
-});
